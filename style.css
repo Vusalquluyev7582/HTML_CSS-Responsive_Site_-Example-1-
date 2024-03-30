@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.6rem;
+    /* 1.6rem 16pxdi. 2rem 20pxdi */
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+/** header */
+header {
+    height: 45rem;
+    /*450px deməkdi*/
+}
+
+header .bg-image {
+    width: 100%;
+    height: 45rem;
+    background-image: url("./image/back-img.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 11rem;
+    padding-bottom: 0;
+}
+
+.btn {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #6660;
+    padding: .6rem 1rem;
+    margin: .5rem 0;
+    display: inline-block;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.btn:hover {
+    color: #333;
+    background-color: #eaeaea;
+}
+
+
+/** section-a */
+#section-a {
+    color: #333;
+    background-color: #eaeaea;
+    padding: 3.2rem;
+}
+
+
+/** section-b */
+#section-b {
+    padding: 2rem;
+}
+
+#section-b ul {
+    list-style: none;
+}
+
+#section-b li {
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+
+/** section-c */
+#section-c {
+    color: #333;
+    background-color: #eaeaea;
+    padding: 5rem;
+}
+
+
+/** section-d */
+#section-d .box {
+    padding: 5rem;
+}
+
+#section-d .box:first-child {
+    background-color: #2690d4;
+}
+
+#section-d .box a {
+    color: #ffae00;
+}
+
+#section-d .box:nth-child(2) a {
+    color: #1ac576;
+}
+
+
+/** footer */
+footer {
+    padding: 4rem;
+    background-color: #000;
+}
+
+footer a {
+    color: #2690d4;
+}
+
+
+
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+    html {
+        font-size: 12px;
+    }
+}
